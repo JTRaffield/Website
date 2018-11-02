@@ -1,3 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<h1> Hello world!</h3>
+	<head> 
+<!-- This title is shown in the tab on the web browser itself -->
+		<title> Johnathan Raffield </title> 
+	</head> 
+	<body>
+	
+<!-- This is the first header, it is at the very top of the page and because it is 	"h1" it is the largest , by default, of the headers. Note: Header tags ("<h1>", "<h2>") can be reused, they are not numberical indicators-->
+		<h1> Test Webpage </h1>	
+<!-- This "<hr>" tag creates a line accross the screen between the header and paragraph -->
+	<hr>
+		<p> Welcome to my first webpage it contains many different concepts for practice. </p>
+<!-- The characters "&nbsp" create a space where entered, they can be added as many times as wanted. This is 2 spaces (1 for the first actual space, then 1 "&nbsp")-->
+		space&nbsp; test&nbsp; using&nbsp; "nbsp;"
+<!-- This "<br>" tag is used to create a blank line does not require a close tag-->
+	<br> 
+	<hr><hr>
+	
+		<h2> Unordered list </h2> 
+<!-- unordered list "<ul>" with the "<li>" list item -->
+		<ul>		
+			<li> CD </li>
+			<li> DVD </li>
+			<li> BlueRay </li>		
+		</ul>				
+		
+		<h2> Ordered list </h2> 
+<!-- ordered list "<ol>" with the "<li>" list item -->
+		<ol>		
+			<li> CD </li>
+			<li> DVD </li>
+			<li> BlueRay </li>		
+		</ol>
+	<hr><hr>
+	
+		<h2> Table </h2>
+<!-- Creating a table -->	
+		<table>
+	<!-- Table row "<tr>" tag, used to input the data that will be in the next row of the "<table> ... </table>" you are in. -->
+			<tbody><tr> 
+		<!-- Table column "<th>" tag. This column is position 1 -->
+				<th> Planets &nbsp;&nbsp; </th>
+		<!-- This column is position 2 -->				
+				<th> Oceans &nbsp;&nbsp; </th> 
+		<!-- This column is position 3 -->
+				<th> Deserts </th>  
+			</tr>
+			<tr>
+<!-- Table data tag, corresponds with column 1 "Planets" -->
+				<td> Earth </td> 
+		<!-- Alligns under column 2 -->
+				<td> Pacific </td> 
+		<!-- Alligns under column 3 -->
+				<td> Sahara </td> 
+			</tr>
+			<tr>
+				<td> Pluto </td> 
+				<td> Atlantic </td>
+				<td> Gobi </td>
+			</tr>		
+		</tbody></table>
+	<hr><hr>
+	
+	<h2> External link </h2>
+<!-- linking to an outside location-->
+		<p> Click the link to go to 
+<!-- this sets the destination of the clickable link (this is not shown) -->
+			<a href="https://github.com/JTRaffield"> 
+<!-- this is what is actually displayed on the page (what users will click on) -->
+			my personal github page. </a> 
+		</p>
+	<hr><hr>
+	
+	<h2> Internal link selection </h2>
+<!-- linking to a location on the same page with the "#" -->
+		<ul> 
+<!-- This unordered list will link to different sections on the same webpage."#" is what tells the reference element that it is local. -->
+			<li> <a href="#Music">Music Section </a> </li> 
+			<li> <a href="#Projects">Projects Section </a> </li>
+			<li> <a href="#Comments">Comments Section </a> </li>
+			<li> <a href="#Buttons">Buttons Section </a> </li>
+			<li> <a href="#Escape Characters">Escape Characters Section </a> </li>
+			<li> <a href="#Bold and Italic elements">Bold and Italic elements Section </a> </li>
+			<li> <a href="#iframe">IFrame Section </a> </li>
+			<li> <a href="#Super and Subscript">Super and Subscript section </a> </li>	
+			<li> <a	href="#title and alt">Title and alt Section </a></li>
+			<li> <a href="#audio">Audio Section </a> </li>	
+			<li> <a href="#video">Video Section </a> </li>			
+		</ul>
+	<hr><hr>
+	
+	<h2> Internal link sections </h2>
+<!-- the name "Music" is what is referenced in the previous Unordered list -->
+		<p> <a name="Music"> </a></p><h3><a name="Music"> This is the section about my music history. </a></h3><a name="Music"> </a>
+<!-- the "<img>" tag is used to add a picture. Here the picture referenced is in the same folder as the source code, so all that is needed is the name of the pictures -->  	
+			<img src="trombone.jpg" width="200" height="150"> 
+<!-- This is just for spacing between the pictures -->
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- The "width" and "height" adjustments are done on the web browser, so if you are remote accessing a server and getting this webpage the image is still sent to the remote host at full size then resized by the browser-->				
+			<img src="drums.jpg" width="200" height="150"> 
+			
+		<br> 
+		In grade school I played the Trombone for 6 years through Middle School and High School, and it was because of the band program at school that I became so interested in music.
+		While volunteering at church in High School, I started to work with the praise and worship team and started to learn how to play the Bass Guitar and Drums.
+		I really had fun on the drums so the leader of the team allowed me to audition for the position of drummer and I managed to impress him enough to get the position.
+		Ever sense joining the Marine Corps I haven't had the time or resources to pick up any of the instruments I learned, but my enthusiasm for the art has only grown.
+		<p></p> 
+	<hr>
+		<p> <a name="Projects"> </a></p><h3><a name="Projects"> This is the section about my Projects. </a></h3><a name="Projects"> </a> <!-- the name "Projects" is what is referenced in the previous Unordered list -->
+		My project history started while participating in the Microsoft Software and Systems Academy (MSSA) and for the most part is class projects that focus on fundamental programming concepts and skills.
+		That being said, on my <a href="https://github.com/JTRaffield"> Personal github page, </a> I do have extra projects that I have been creating outside of the class in an attempt to better my understanding of the programming languages.
+		<p></p> 
+	<hr><hr>
+		
+	<h2> Comment fields </h2>	
+<!-- Creating a form on the webpage -->
+	<form action="" method="">
+	<a name="Comments"> </a>
+<!-- Creating a single line Text Box -->
+<!-- The firstname attribute is what links from the label tag to the correct text box -->
+	<label for="firstname">First Name:</label>
+<!-- the "text" type is a single line text box-->	
+	<input type="text" name="" id="firstname"> <br>
+	
+	<label for="Email">Email:</label>
+<!-- by default the text will scroll is the number of characters used goes past the end, or you can increase the size of the box -->	
+	<input type="text" id="Email" name="" size="28"><br><br>
+		
+<!-- Creating a multi-line text box-->
+Comments:<br>
+	<textarea rows="10" cols="40"></textarea><br>
+	<input type="submit" value="Submit"> <br><br><hr><hr>
+	</form>
+	
+	<h2> Button fields</h2>
+	<a name="Buttons"> </a>
+<!-- Creating radio buttons-->
+	<form>
+	yes:
+	<input type="radio" name="yesorno" value=""><br>
+	No:
+	<input type="radio" name="yesorno" value=""><br>
+	
+<!-- Creating check boxes -->
+	Which subject are you interested in? <br>
+	<input type="checkbox" name=""> Football <br>
+	<input type="checkbox" name=""> Basketball <br>
+	<input type="checkbox" name=""> Baseball <br>
+<!-- the "checked" attribute sets the box to be marked by default. The user can uncheck if desired -->	
+	<input type="checkbox" name="" checked="checked"> Hockey <br><hr>
+	</form>
+	
+<!-- create a number input box -->	
+<!-- the min and max attributes limit the numbers that the user can choose -->
+	<input type="number" min="0" max="50"><br>
+	
+<!-- creating a drop down list -->
+	<select>
+		<option value="">Select an option</option>
+		<option value="Texas">Texas</option>
+		<option value="Luisiana">Luisiana</option>
+		<option value="Nevada">Nevada</option>
+	</select><br><hr><br>
+	
+	
+<!-- Creating a date and number options box  -->	
+	<form>
+<!-- The "fieldset" field creates a box around the elements within its block, the "legend" field places the text within it on the top line of the fieldset -->	
+		<fieldset>
+			<legend>Enter desired travel date: </legend>
+				<input type="date" name="day">
+			Number of days: <input type="number" name="numdays" min="1" max="10">
+				<br><br>
+			Name: <input type="text">
+		</fieldset>
+	</form>
+	<hr><hr>	
+	
+<!-- <!-- Creating a meta element -->
+<!-- if the you do not enter a "description" element, the browser will put one in itself -->
+	<meta name="description" content="This is a web page for html concept practice.">
+<!-- Meta tags are not visible to users, they are just used by search engines to discover your webpage and associate it with similar websites -->
+<!-- The "keywords" field is not used by most US search engines, but foreign search engines may still use it -->	
+	<meta name="keywords" content="HTML, Practice">
+	<meta http-equiv="author" content="Johnathan raffield">
+	<meta http-equiv="content-language" content="en-us">
+	
+<!-- Escape Characters -->	
+	<h3> Escape Characters </h3>
+	<a name="Escape Characters"> </a>
+	<p> The following groups of characters are used within html to do various things. They all begin with the "&amp;" character, however, I cannot include it with the example because then they would not show up properly. All of the character groups can be ended with a ";" to separate.</p>
+	<ul>		
+		<li> Space: "nbsp" </li>
+		<li> TM: "#8482  </li>
+		<li> &amp;: "amp" </li>	
+		<li> CopyRight: "copy" </li>
+		<li> &lt;: "lt" </li>
+		<li> &gt;: "gt" </li>
+		<li> ?: "#63" </li>
+	</ul>
+	<hr><hr>
+	
+	<h3>Bold and Italic elements</h3>
+	<a name="Bold and Italic elements"> </a>
+<!-- The "B" tag bolds whatever is in it. -->	
+	<p> This is a <b>bold element.</b></p>
+<!-- The strong element boldes whatever is in it, and also adds additional info to the text, this is used in text-to-speech programs -->	
+	<p> This is a <strong>strong element.</strong></p>
+	
+	<p> This is an <i>italic element.</i></p>
+<!-- The emphasis element is like the strong element with the additional info, however it is simply italic rather than bold -->	
+	<p> This is an <em>emphasis element.</em></p>
+	
+	<p> This is a <em><strong>Combination of elements.</strong></em></p>
+	<hr><hr>
+	
+	<h3>IFrame Section</h3>
+	<a name="iframe"> </a>
+	<p>This section will switch between the two pictures presented earlier on the page.</p>
+<!-- the "frameborder" attribute is either "0" or "1" for off or on-->	
+<!-- the "name" attribute is for php and asp, the "id" attribute is the name for the bordered field -->
+	<iframe frameborder="1" width="220" height="200" src="trombone.html" name="ouriframe" id="ouriframe">
+	You cannot see this because it is within the iframe tag and not the "src" attribute.
+	</iframe><br>
+<!-- the second picture target is the same as the id from the iframe -->
+	<a href="trombone.html" target="ouriframe">picture 1</a>	
+	<a href="drums.html" target="ouriframe">picture 2</a>
+	<hr><hr>
+
+<!-- The superscript and subscript elements raise and lower text for a more professional appearance -->	
+	<h3> Super and Subscript section</h3>
+	<a name="Super and Subscript"> </a>	
+	<p>Superscript raises text: August 23<sup>rd</sup></p>
+	<p>Subscript lowers text: H<sub>2</sub>O</p>
+	<hr><hr>
+	
+	<h3>Title and Alt section</h3>
+	<a name="title and alt"> </a>
+<!-- The "title" attribute shows the text when the image is hovered over. -->	
+	<img src="coachhines.jpg" title="My hero" alt="Coach Hines">
+<!-- the "alt"(alternate)  attribute displays if the image is not where the html file thinks it is-->	
+	<hr><hr>
+	
+	
+	<h3> Audio Section</h3>	
+	<a name="audio"></a>
+<!-- three standard formats for web browsers are .mp3, .wav, and .ogg. However, i am using a .m4a because thats what I had -->
+	<p>Here is some ACDC. I do not own the rights to these songs, I am simply a fan of the music.</p><br>	
+	<p> Hells Bells</p>
+	<audio controls autoplay>
+<!-- You can put the source within the audio tag if you are confident the file type will work or you can put multiple source tags with different file types to run if the first is un suported by the browser.-->
+		<source src="01 Hells Bells.m4a"/>
+		<source src="01 Hells Bells.mp3"/>		
+	</audio><br>	
+	<p>Shoot to Thrill</p>
+<!-- the "autoplay" attribute will set the song to play indeiately at the load of the page-->
+	<audio src="02 Shoot To Thrill.m4a" controls >
+<!-- the "loop" attribute will play the audio track over and over-->	
+	</audio><br>
+	<hr><hr>
+	
+	<h3>Video Section</h3>
+	<a name="video"></a>
+	<video width="200" height="200" controls>
+<!-- the video path goes in "src" like with all the others-->
+		<source src=""/>
+	</video>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
